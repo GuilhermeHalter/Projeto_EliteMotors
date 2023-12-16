@@ -172,6 +172,12 @@ Removendo Arquivo:
 ```bash
     npm install vue-router
 ```
+```bash
+    npm install pinia
+```
+```bash
+    npm install axios
+```
 
 **Comandos React:**
 

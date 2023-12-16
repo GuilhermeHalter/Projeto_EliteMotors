@@ -169,7 +169,15 @@ Removendo Arquivo:
 ## Comandos Úteis e Plugins
 **Comandos Vue:**
 
-(Adaptar conforme as tecnologias específicas do projeto "Elite Motors".)
+```bash
+    npm install vue-router
+```
+```bash
+    npm install pinia
+```
+```bash
+    npm install axios
+```
 
 **Comandos React:**
 

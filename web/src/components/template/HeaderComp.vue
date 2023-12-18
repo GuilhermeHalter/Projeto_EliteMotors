@@ -12,9 +12,10 @@
 .header {
   background-color:#001F3F;
   display: flex;
+  height: 70px;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 2.5rem;
 }
 
 .header-text {
@@ -27,8 +28,8 @@
 }
 
 .logo{
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   mix-blend-mode:  difference;
 }
 
@@ -41,11 +42,13 @@
   color: rgb(146, 146, 146);
   background-color: none;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
 }
 .button:hover{
   cursor: pointer;
   color: #FFD700;
   transition: 1s;
+  font-size: 20px;
 }
 </style>

@@ -44,41 +44,52 @@
   <h2>Destaques:</h2>
 
   <div class="cards">
-    <div class="card">
-      <img src="../media/Ford_Mustang.jpg" alt="Car 1" />
-      <h3>Nome do Veículo 1</h3>
-      <p>Ano: 2023</p>
-      <p>Preço: $30,000</p>
-    </div>
-
-    <div class="card">
+    <RouterLink to="/infos"> 
+      <div class="card">
+        <img src="../media/Ford_Mustang.jpg" alt="Car 1" />
+        <h3>Nome do Veículo 1</h3>
+        <p>Ano: 2023</p>
+        <p>Preço: $30,000</p>
+      </div>
+    </RouterLink>
+    
+    <RouterLink to="/infos">
+     <div class="card">
       <img src="../media/Ford_Mustang.jpg" alt="Car 2" />
       <h3>Nome do Veículo 2</h3>
       <p>Ano: 2022</p>
       <p>Preço: $25,000</p>
-    </div>
-
-    <div class="card">
+     </div>
+    </RouterLink>
+   
+    <RouterLink to="/infos">
+     <div class="card">
       <img src="../media/Ford_Mustang.jpg" alt="Car 3" />
       <h3>Nome do Veículo 3</h3>
       <p>Ano: 2021</p>
       <p>Preço: $20,000</p>
-    </div>
+     </div>
+    </RouterLink>
 
-    <div class="card">
-      <img src="../media/Ford_Mustang.jpg" alt="Car 4" />
-      <h3>Nome do Veículo 4</h3>
-      <p>Ano: 2021</p>
-      <p>Preço: $20,000</p>
+   
+    <RouterLink to="/infos">
+      <div class="card">
+        <img src="../media/Ford_Mustang.jpg" alt="Car 4" />
+        <h3>Nome do Veículo 4</h3>
+        <p>Ano: 2021</p>
+        <p>Preço: $20,000</p>
+      </div>
+    </RouterLink>
+    
+    <RouterLink to="/infos">
+      <div class="card">
+        <img src="../media/Ford_Mustang.jpg" alt="Car 5" />
+        <h3>Nome do Veículo 5</h3>
+        <p>Ano: 2021</p>
+        <p>Preço: $20,000</p>
+      </div>
+    </RouterLink>
     </div>
-
-    <div class="card">
-      <img src="../media/Ford_Mustang.jpg" alt="Car 5" />
-      <h3>Nome do Veículo 5</h3>
-      <p>Ano: 2021</p>
-      <p>Preço: $20,000</p>
-    </div>
-  </div>
 
 </template>
 
@@ -134,9 +145,9 @@ h2{
 
 .card img {
   width: 100%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
-  object-position: center -100px;
+  object-position: center -50px;
   border-radius: 6px;
   transition: transform 0.3s ease-in-out;
 }

@@ -4,6 +4,9 @@
     <div class="header-buttons">
       <router-link to="/" class="button">Home</router-link>
       <router-link to="/ofertas" class="button">Ofertas</router-link>
+      <router-link to="/Lojas" class="button">Loja</router-link>
+
+      
     </div>
   </div>
 </template>

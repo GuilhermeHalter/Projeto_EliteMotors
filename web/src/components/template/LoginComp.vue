@@ -1,56 +1,101 @@
-<script setup>
-import { ref, reactive } from 'vue'
-import { useAuthStore } from '@/stores/auth'
-import Modal from '@/components/template/Modal.vue'
-
-const authStore = useAuthStore()
-const showForm = ref(false)
-const user = reactive({
-  username: '',
-  password: ''
-})
-
-function closeForm() {
-  showForm.value = false
-  user.username = ''
-  user.password = ''
-}
-
-async function login() {
-  try {
-    await authStore.login({ ...user })
-    closeForm()
-  } catch (error) {
-    alert('Usuário ou senha inválidos')
-  }
-}
-</script>
-
 <template>
-  <modal :visible="showForm" @close="showForm = false">
-    <template #header>
-      <h3>Login</h3>
-    </template>
-    <template #body>
-      <form class="form">
-        <div class="form-item">
-          <input type="text" placeholder="Usuário" id="username" v-model="user.username" />
-          <label for="username">Usuário</label>
-        </div>
-        <div class="form-item">
-          <input type="password" placeholder="Senha" id="password" v-model="user.password" />
-          <label for="password">Senha</label>
-        </div>
+  <div class="login-container">
+    <div class="image-container">
+      <!-- Imagem grande ocupando 50% da tela -->
+      <img src="" alt="Imagem de fundo" />
+    </div>
+    <div class="login-card">
+      <!-- Card de login com inputs de email e senha -->
+      <h2>Faça Login</h2>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" v-model="email" required />
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" v-model="password" required />
+
+        <button @click.prevent="login">Entrar</button>
       </form>
-    </template>
-    <template #footer>
-      <div class="footerButtons">
-        <button @click="closeForm">Cancelar</button>
-        <button class="loginButton" @click="login">Login</button>
-      </div>
-    </template>
-  </modal>
+    </div>
+  </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      email: '',
+      password: '',
+    };
+  },
+  methods: {
+    login() {
+      // Lógica de autenticação aqui
+      console.log('Email:', this.email);
+      console.log('Senha:', this.password);
+      // Adicione a lógica de autenticação conforme necessário
+    },
+  },
+};
+</script>
+
 <style>
+/* Estilos para a tela de login */
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.image-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
 </style>

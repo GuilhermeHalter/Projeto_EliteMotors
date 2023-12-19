@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 
-from elitemotors.models import Carro, Cor
+from elitemotors.models import Carro, Cor, Acessorio
 
 class CarroSerializer(ModelSerializer):
     class Meta:
@@ -12,8 +12,7 @@ class CorSerializer(ModelSerializer):
         model = Cor
         fields = "__all__"
 
-'''class AcessorioSerializer(ModelSerializer):
+class AcessorioSerializer(ModelSerializer):
     class Meta:
         model = Acessorio
         fields = "__all__"
-'''

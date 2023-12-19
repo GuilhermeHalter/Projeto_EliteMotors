@@ -108,7 +108,8 @@ Usuários: Gerentes.
 (Adaptar os requisitos não funcionais conforme as necessidades específicas do projeto "Elite Motors".)
 
 ## Diagrama de Classe
-(Inserir o diagrama de classe atualizado para refletir as classes específicas do projeto "Elite Motors".)
+
+<img src="../Projeto_EliteMotors/media/Modelagem-EliteMotors.png"/>
 
 ## Sobre o Projeto
 O projeto contém um repositório com 3 arquivos diferentes:

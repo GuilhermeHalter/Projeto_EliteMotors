@@ -2,7 +2,7 @@
     <div class="login-container">
       <div class="image-container">
         <h1 class="title">Welcome to the Elite Motors!!!</h1>
-        <img src="C:\Users\anaha\OneDrive\Documentos\Projetos\Projeto_EliteMotors\web\src\media\Ford_Mustang.jpg" alt="Imagem de fundo" />
+        <img src="" alt="Imagem de fundo" />
       </div>
       <div class="login-card">
         <h2>Faça seu cadastro</h2>

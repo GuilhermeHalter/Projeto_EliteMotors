@@ -1,5 +1,4 @@
 from django.shortcuts import render
-
 from rest_framework.viewsets import ModelViewSet
 
 from elitemotors.models import Carro, Cor, Acessorio

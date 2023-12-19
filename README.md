@@ -109,7 +109,7 @@ Usuários: Gerentes.
 
 ## Diagrama de Classe
 
-<img src="media/Modelagem-EliteMotors.png"/>
+<img src="media/Modelagem-EliteMotorsv2.png"/>
 
 ## Sobre o Projeto
 O projeto contém um repositório com 3 arquivos diferentes:

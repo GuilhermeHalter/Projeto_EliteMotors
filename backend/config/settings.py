@@ -1,7 +1,14 @@
 
+import os
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+
+# App Uploader settings
+MEDIA_URL = "http://localhost:8000/media/"
+MEDIA_ENDPOINT = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
+FILE_UPLOAD_PERMISSIONS = 0o640
 
 SECRET_KEY = 'django-insecure-b__!yx0%^ie-*rxlhe98bm=^x9=8qi*2g5uc%4_zi(ek2^*4d+'
 
@@ -19,6 +26,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'usuario',
+    "uploader",
     'elitemotors',
 ]
 
